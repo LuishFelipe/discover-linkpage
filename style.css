@@ -41,7 +41,8 @@ body *{
 
 #container {
   margin: 56px auto auto auto;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
 }
 
 #profile {
@@ -147,4 +148,13 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 16px;
+}
+
+@media(min-width: 650px){
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
